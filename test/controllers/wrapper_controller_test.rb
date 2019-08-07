@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class WrapperControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get WrapIt home page" do
+    get root_url
+    assert_response :success
+  end
 end
