@@ -1,0 +1,2 @@
+class WrapperController < ApplicationController
+end
