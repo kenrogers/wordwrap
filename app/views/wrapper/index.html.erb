@@ -1,5 +1,9 @@
 <h1 class="text-center">WrapIt</h1>
-<form action="#">
+<% if @formatted_text %>
+  <h2>Your Formatted Text:</h2>
+  <%= @formatted_text %>
+<% end %>
+<%= form_tag do %>
   <div class="form-group">
     <textarea class="form-control mw-100" id="exampleFormControlTextarea1" rows="10" cols="20" name="text"></textarea>
   </div>
@@ -8,4 +12,4 @@
     <input type="number" class="form-control" id="columns" name="columns">
   </div> 
   <button class="btn btn-primary" type="submit">Wrap them words</button>
-</form>
+<% end %>
